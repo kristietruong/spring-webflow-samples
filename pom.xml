@@ -57,5 +57,24 @@
 			<url>http://repo.spring.io/snapshot</url>
 		</repository>
 	</repositories>
+	
+	<build>
+		<plugins>
+			 <plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat8-maven-plugin</artifactId>
+				<version>2.3-SNAPSHOT</version>
+				<configuration>
+				  <server>TomcatServer</server>
+				</configuration>
+			  </plugin>
+			  <plugin> 
+				<groupId>org.apache.maven.plugins</groupId> 
+				<artifactId>maven-war-plugin</artifactId> 
+				<version>3.5.2</version> 
+			</plugin>
+			  
+		  </plugins>
+  </build>
 
 </project>
